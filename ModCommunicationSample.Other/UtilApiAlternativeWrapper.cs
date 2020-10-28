@@ -11,10 +11,10 @@ namespace ModCommunicationSample.Other
 	/// </summary>
 	internal static class UtilApiAlternativeWrapper
 	{
-		public static MethodDelegate ThrottleDetectorSubscribe =
+		public static readonly MethodDelegate ThrottleDetectorSubscribe =
 			_ => Debug.Log("[ModCommunicationSample.Other] Utils are unavailable. Not subscribed.");
 
-		public static MethodDelegate ThrottleDetectorUnsubscribe =
+		public static readonly MethodDelegate ThrottleDetectorUnsubscribe =
 			_ => Debug.Log("[ModCommunicationSample.Other] Utils are unavailable. Not unsubscribed.");
 
 		#region
